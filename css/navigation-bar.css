@@ -1,0 +1,31 @@
+.navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: antiquewhite;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+  
+
+.nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 14px;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.nav-link i {
+  font-size: 20px;
+}
