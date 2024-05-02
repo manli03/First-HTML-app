@@ -4,26 +4,25 @@ body {
   
 .gradient {
     /* Fallback color */
-    background-color: #FAEBD7; /* Antique White */
+    background-color: rgb(246, 224, 194); /* Antique White */
   
-    /* Combine gradient and texture with background-blend-mode */
-    background-image: linear-gradient(to bottom, #FAEBD7, #E4D9C1), url('texture.png');
+    /* Combine color and texture with background-blend-mode */
+    background-image: url('../resources/gallery-background.png');
     background-repeat: repeat; /* Repeat the texture image */
     background-blend-mode: multiply; /* Multiply the texture with the gradient */
-    opacity: 0.5; /* Adjust the opacity of the overall effect if needed */
 }
 
 .containera {
     max-width: 100%;
-    margin: 20px auto 100px auto; /* Adjust margin for better spacing */
+    margin: 20px auto 100px auto;
     padding: 20px;
 }
 
 .page-title {
     text-align: center;
-    font-size: 2rem; /* Decrease font size for better mobile viewing */
+    font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 20px; /* Add margin-bottom for spacing */
+    margin-bottom: 20px;
 }
 
 .gallery {
