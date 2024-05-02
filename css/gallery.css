@@ -4,7 +4,7 @@ body {
   
 .gradient {
     /* Fallback color */
-    background-color: rgb(246, 224, 194); /* Antique White */
+    background-color: rgb(246, 224, 194);
   
     /* Combine color and texture with background-blend-mode */
     background-image: url('../resources/gallery-background.png');
