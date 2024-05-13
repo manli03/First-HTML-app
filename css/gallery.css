@@ -5,20 +5,13 @@
     /* Combine color and texture with background-blend-mode */
     background-image: url('../resources/gallery-background.png');
     background-repeat: repeat; /* Repeat the texture image */
-    background-blend-mode: multiply; /* Multiply the texture with the gradient */
+    background-blend-mode: multiply; /* Multiply the texture with the color*/
 }
 
 .containera {
     max-width: 100%;
     margin: 20px auto 100px auto;
     padding: 20px;
-}
-
-.page-title {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 20px;
 }
 
 .gallery {
@@ -55,33 +48,19 @@
 }
 
 .page-title {
-    color: #333; /* Adjusted text color for better visibility */
+    color: #000000; /* Text color */
     font-size: 2.5rem;
     font-weight: bold;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    padding: 50px 31.4%;
-    display: inline-block;
-    position: relative; /* Set position to relative to contain absolute positioned pseudo-element */
+    padding: 50px 0;
+    display: block;
+    position: relative;
     text-align: center;
-}
-
-.page-title::before {
-    content: ""; /* Necessary for the pseudo-element */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     background-image: url(../resources/title-background.jpg);
     background-size: cover;
-    opacity: 0.7; /* Adjust transparency here */
-    z-index: -1; /* Ensure the background is behind the content */
+    opacity: 0.7;
+    z-index: -1;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
-
-
-
-
-
-
-
-
