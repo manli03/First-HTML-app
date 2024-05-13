@@ -20,7 +20,7 @@ img {
     border-radius: 10px;
 }
 
-img:hover {
+img:active {
     opacity: 0.8;
 }
 
