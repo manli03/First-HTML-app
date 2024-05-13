@@ -48,7 +48,7 @@
     filter: brightness(115%);
 }
 
-h4 {
+.placeName {
     font-weight: bold;
     margin-top: 10px;
     text-align: center;
