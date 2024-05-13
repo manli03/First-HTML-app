@@ -1,7 +1,3 @@
-body {
-    font-family: Arial, sans-serif;
-}
-  
 .gradient {
     /* Fallback color */
     background-color: rgb(246, 224, 194);
@@ -52,14 +48,40 @@ body {
     filter: brightness(115%);
 }
 
-h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-shadow: 1px 1px 2px gray;
-}
-
 h4 {
     font-weight: bold;
     margin-top: 10px;
     text-align: center;
 }
+
+.page-title {
+    color: #333; /* Adjusted text color for better visibility */
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    padding: 50px 31%;
+    display: inline-block;
+    position: relative; /* Set position to relative to contain absolute positioned pseudo-element */
+    text-align: center;
+}
+
+.page-title::before {
+    content: ""; /* Necessary for the pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../resources/title-background.jpg);
+    background-size: cover;
+    opacity: 0.7; /* Adjust transparency here */
+    z-index: -1; /* Ensure the background is behind the content */
+}
+
+
+
+
+
+
+
+
